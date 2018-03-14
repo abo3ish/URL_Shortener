@@ -13,7 +13,6 @@ if(isset($_POST['url'])){
 	}
 	
 }
-// header("location: index.php");
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +36,7 @@ if(isset($_POST['url'])){
 		?>
 		</p>
 		<form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
-			<input type="url" name="url" placeholder="Enter URL">
+			<input type="url" name="url" placeholder="Enter URL" required>
 			<input type="submit" name="submit" value="Shorten">
 		</form>
 	</div>
